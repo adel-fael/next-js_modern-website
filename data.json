@@ -6,9 +6,9 @@
   },
 
   "navData": [
-    { "name": "About", "href": "/" },
-    { "name": "How to", "href": "/" },
-    { "name": "Faqs", "href": "/" }
+    { "name": "About", "href": "#about" },
+    { "name": "How to", "href": "#howto" },
+    { "name": "Faqs", "href": "#faqs" }
   ],
 
   "heroData": {

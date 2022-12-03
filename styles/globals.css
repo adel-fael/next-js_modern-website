@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body {
-    @apply font-body font-normal text-base text-primary bg-slate-200;
+    @apply text-base font-normal font-body text-primary bg-slate-200;
   }
   a {
     @apply font-body text-base uppercase font-medium tracking-[5%];

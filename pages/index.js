@@ -32,12 +32,13 @@ const Home = ({
   return (
     <div className="overflow-hidden max-w-[1600px] mx-auto bg-page">
       <Hero headerData={headerData} heroData={heroData} navData={navData} />
-      <About aboutData={aboutData} />
+      <About aboutData={aboutData}  />
       <How howData={howData}/>
       <Faq faqData={faqData} />
       <Testimonials testimonialData={testimonialData}/>
       <Footer footerData={footerData}/>
       <Copyright />
+      <div className="h-[2000px]"></div> 
     </div>
   )
 }

@@ -9,7 +9,7 @@ import {
   boyAnim,
   fadeInDown,
   girlAnim,
-  heroTuckAnim,
+  heroTruckAnim,
   staggerContainer,
 } from '../variants'
 
@@ -24,21 +24,21 @@ const Hero = ({ headerData, heroData, navData }) => {
         animate="animate"
         className="container mx-auto relative min-h-[800px] lg:min-h-[950px] "
       >
+        
         {/* header */}
         <motion.div variants={fadeInDown}>
           <Header headerData={headerData} navData={navData} />
         </motion.div>
 
         {/* title */}
-
         <motion.h1
           variants={fadeInDown}
           className="h1 max-w-[740px] text-white pt-[12rem] mb-[60px] "
         >
           {title}
         </motion.h1>
+        
         {/* button */}
-
         <motion.button
           whileHover={{
             scale: 1.05,
@@ -50,19 +50,23 @@ const Hero = ({ headerData, heroData, navData }) => {
         </motion.button>
 
         {/* girl image */}
-
         <motion.div
         variants={girlAnim} 
         className="absolute bottom-0 hidden lg:flex">
           <Image src={girlImg} width={206} height={495} />
         </motion.div>
         
-        <div className="absolute hidden -bottom-[25%] -left-[30%] lg:flex ">
+        {/* truck image */}
+        <motion.div 
+        variants={heroTruckAnim} 
+        className="absolute hidden -bottom-[25%] -left-[30%] lg:flex ">
           <Image src={truckImg} width={811} height={395} />
-        </div>
-        <div className="absolute hidden right-[380px] bottom-0 lg:flex z-10">
+        </motion.div>
+
+        {/* boy image */}
+        <motion.div variants={boyAnim} className="absolute hidden right-[380px] bottom-0 lg:flex z-10">
           <Image src={boyImg} width={206} height={495} />
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   )
