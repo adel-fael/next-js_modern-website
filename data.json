@@ -7,7 +7,7 @@
 
   "navData": [
     { "name": "About", "href": "#about" },
-    { "name": "How to", "href": "#howto" },
+    { "name": "How to", "href": "#how-to" },
     { "name": "Faqs", "href": "#faqs" }
   ],
 
@@ -130,15 +130,15 @@
     "text": "We provide traffic management consultants so you get started quickly, contact us for a quote today!",
     "logo": "/images/footer/logo.svg",
     "links": [
-      { "name": "about", "href": "/" },
-      { "name": "how to", "href": "/" },
-      { "name": "faqs", "href": "/" }
+      { "name": "about", "href": "#about" },
+      { "name": "how to", "href": "#how-to" },
+      { "name": "faqs", "href": "#faqs" }
     ],
     "form": {
       "labelName": "Name",
       "placeholderName": "Your name",
-      "labelEmail": "Email address",
-      "placeholderEmail": "Your email adddress",
+      "labelEmail": "Email",
+      "placeholderEmail": "example@gmail.com",
       "btnText": "Get Started"
     }
   }

@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  scroll-behavior: smooth;
-}
-
 @layer base {
+  * {
+    scroll-behavior: smooth;
+  }
   body {
     @apply text-base font-normal font-body text-primary bg-slate-200;
   }

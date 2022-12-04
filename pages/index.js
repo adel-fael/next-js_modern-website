@@ -1,4 +1,5 @@
 // import components
+import Head from 'next/head'
 import About from '../components/About'
 import Copyright from '../components/Copyright'
 import Faq from '../components/Faq'
@@ -31,6 +32,9 @@ const Home = ({
 }) => {
   return (
     <div className="overflow-hidden max-w-[1600px] mx-auto bg-page">
+      <Head>
+        <title>Modern Website</title>
+      </Head>
       <Hero headerData={headerData} heroData={heroData} navData={navData} />
       <About aboutData={aboutData}  />
       <How howData={howData}/>
@@ -38,7 +42,7 @@ const Home = ({
       <Testimonials testimonialData={testimonialData}/>
       <Footer footerData={footerData}/>
       <Copyright />
-      <div className="h-[2000px]"></div> 
+      {/* <div className="h-[2000px]"></div>  */}
     </div>
   )
 }

@@ -11,7 +11,7 @@ const NavMobile = ({ navData }) => {
           const { name, href } = item
           return (
             <li key={idx}>
-              <Link href={href} className='text-white hover:text-accent'>{name}</Link>
+              <Link href={href} className='text-white hover:text-white/40'>{name}</Link>
             </li>
           )
         })}
