@@ -4,7 +4,7 @@ import {
   fadeInLeft,
   fadeInRight,
   staggerAccordionContainer,
-  staggerTextContainer
+  staggerTextContainer,
 } from '../variants'
 import Accordion from './Accordion'
 
@@ -39,20 +39,22 @@ const Faq = ({ faqData }) => {
           </motion.div>
         </motion.div>
         {/* accordion list */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] gap-y-[10px]">
+        <motion.div
+          variants={staggerAccordionContainer}
+          initial="initial"
+          whileInView={'animate'}
+          viewport={{ once: false, amount: 0.4 }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] gap-y-[10px]"
+        >
           {accordions.map((accordion, idx) => {
             return (
-              <motion.div
-                variants={staggerAccordionContainer}
-                initial="initial"
-                whileInView={'animate'}
-                viewport={{ once: false, amount: 0.4 }}
-              >
+              <motion.div variants={fadeInRight}>
                 <Accordion accordion={accordion} key={idx} />
+
               </motion.div>
             )
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
