@@ -11,12 +11,8 @@ const Accordion = ({ accordion }) => {
   const { question, answer } = accordion
   return (
     <AnimatePresence
-            
-            initial={false}
- 
-            exitBeforeEnter={true}
-          
-            onExitComplete={() => null}
+      initial={true}
+      exitBeforeEnter={true}
     >
       <motion.div variants={fadeInRight} className="max-w-[550px]">
         <button
