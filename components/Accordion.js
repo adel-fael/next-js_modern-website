@@ -1,6 +1,6 @@
-import { AnimatePresence, motion } from 'framer-motion'
+import {  motion } from 'framer-motion'
 import { useState } from 'react'
-import { fadeInRight } from '../variants'
+import { staggerAccordionContainer,fadeInRight } from '../variants'
 // import icons
 import { HiOutlineMinus, HiOutlinePlus } from 'react-icons/hi'
 
@@ -10,9 +10,11 @@ const Accordion = ({ accordion }) => {
   // destructure accordion data
   const { question, answer } = accordion
   return (
-    <AnimatePresence
-      initial={true}
-      exitBeforeEnter={true}
+    <motion.div
+    variants={staggerAccordionContainer}
+    initial="initial"
+    whileInView={'animate'}
+    viewport={{ once: false, amount: 0.4 }}
     >
       <motion.div variants={fadeInRight} className="max-w-[550px]">
         <button
@@ -61,7 +63,7 @@ const Accordion = ({ accordion }) => {
           <p className="lead leading-[30px] mt-2">{answer}</p>
         </div>
       </motion.div>
-    </AnimatePresence>
+    </motion.div>
   )
 }
 
