@@ -19,14 +19,18 @@ export const staggerTextContainer = {
 };
 
 export const staggerAccordionContainer = {
-  initial: {},
+  initial: {
+    opacity: 0
+  },
   animate: {
+    opacity:1,
     transition: {
-      staggerChildren: 0.06,
-      delayChildren: 0.2,
+      staggerChildren: 0.6,
+      delayChildren: 0.4,
       type: 'tween',
     },
   },
+  exit:0
 };
 
 export const staggerFooterContainer = {

@@ -21,6 +21,7 @@ const Faq = ({ faqData }) => {
         <motion.div
           variants={staggerTextContainer}
           initial="initial"
+          exit='exit'
           whileInView={'animate'}
           viewport={{ once: false, amount: 0.6 }}
           className="relative flex flex-col justify-center items-center pt-8 pb-16  lg:flex-row lg:justify-start lg:pt-16 lg:pb-32"

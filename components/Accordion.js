@@ -10,7 +10,7 @@ const Accordion = ({ accordion }) => {
   // destructure accordion data
   const { question, answer } = accordion
   return (
-      <motion.div variants={fadeInRight} className="max-w-[550px]">
+      <div  className="max-w-[550px]">
         <button
           onClick={() => {
             setIsOpen(!isOpen)
@@ -56,7 +56,7 @@ const Accordion = ({ accordion }) => {
         >
           <p className="lead leading-[30px] mt-2">{answer}</p>
         </div>
-      </motion.div>
+      </div>
   )
 }
 
