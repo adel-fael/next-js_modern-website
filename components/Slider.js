@@ -27,7 +27,7 @@ const Slider = ({ clients }) => {
               <p className='font-light leading-[30px]'>{message}</p>
               {/* name & image */}
               <div className='flex items-center gap-x-5'>
-                <Image src={image} width={60} height={60} />
+                <Image src={image} width={60} height={60} alt="testimonial Image sketch"/>
                 <span className='font-semibold'>{name}</span>
               </div>
             </div>

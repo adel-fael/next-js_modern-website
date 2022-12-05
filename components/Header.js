@@ -42,6 +42,7 @@ const Header = ({ headerData, navData }) => {
           src={`${headerState ? logoImgV2 : logoImgV1}`}
           width={`${headerState ? 180 : 212}`}
           height={50}
+          alt="Header Image sketch"
         />
       </Link>
       {/* nav & button wrapper - initially hidden */}

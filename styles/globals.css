@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   * {
     scroll-behavior: smooth;
     scroll-margin-top: 100px;

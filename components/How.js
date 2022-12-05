@@ -18,7 +18,7 @@ const How = ({ howData }) => {
         viewport={{ once: false, amount: 0.6 }} className="flex flex-col items-center lg:flex-row gap-x-10">
           {/* image  */}
           <motion.div variants={fadeInRight} className="flex-1">
-            <Image src={girlImg} width={720} height={678} />
+            <Image src={girlImg} width={720} height={678} alt="girl Image sketch"/>
           </motion.div>
           {/* text  */}
           <motion.div variants={fadeInLeft} className="flex justify-end flex-1">

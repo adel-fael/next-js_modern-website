@@ -35,7 +35,7 @@ const Faq = ({ faqData }) => {
             variants={fadeInLeft}
             className="lg:absolute lg:-right-16 lg:-top-16"
           >
-            <Image src={boyImg} width={708} height={498} />
+            <Image src={boyImg} width={708} height={498} alt="boy Image sketch" />
           </motion.div>
         </motion.div>
         {/* accordion list */}
@@ -48,10 +48,9 @@ const Faq = ({ faqData }) => {
         >
           {accordions.map((accordion, idx) => {
             return (
-              <motion.div variants={fadeInRight}>
+         
                 <Accordion accordion={accordion} key={idx} />
 
-              </motion.div>
             )
           })}
         </motion.div>

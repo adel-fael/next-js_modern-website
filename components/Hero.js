@@ -53,19 +53,19 @@ const Hero = ({ headerData, heroData, navData }) => {
         <motion.div
         variants={girlAnim} 
         className="absolute bottom-0 hidden lg:flex">
-          <Image src={girlImg} width={206} height={495} />
+          <Image src={girlImg} width={206} height={495} alt="girl Image sketch"/>
         </motion.div>
         
         {/* truck image */}
         <motion.div 
         variants={heroTruckAnim} 
         className="absolute hidden -bottom-[25%] -left-[30%] lg:flex ">
-          <Image src={truckImg} width={811} height={395} />
+          <Image src={truckImg} width={811} height={395} alt="truck Image sketch" />
         </motion.div>
 
         {/* boy image */}
         <motion.div variants={boyAnim} className="absolute hidden right-[380px] bottom-0 lg:flex z-10">
-          <Image src={boyImg} width={206} height={495} />
+          <Image src={boyImg} width={206} height={495} alt="boy Image sketch"/>
         </motion.div>
       </motion.div>
     </section>
