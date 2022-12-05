@@ -1,6 +1,5 @@
 import {  motion } from 'framer-motion'
 import { useState } from 'react'
-import { fadeInRight } from '../variants'
 // import icons
 import { HiOutlineMinus, HiOutlinePlus } from 'react-icons/hi'
 
