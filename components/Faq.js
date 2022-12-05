@@ -39,13 +39,17 @@ const Faq = ({ faqData }) => {
           </motion.div>
         </motion.div>
         {/* accordion list */}
-        <div
+        <motion.div
+          variants={staggerAccordionContainer}
+          initial="initial"
+          whileInView={'animate'}
+          viewport={{ once: false, amount: 0.4 }}
           className="grid grid-cols-1 lg:grid-cols-2 gap-x-[20px] gap-y-[10px]"
         >
           {accordions.map((accordion, idx) => {
             return <Accordion accordion={accordion} key={idx} />
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   )
