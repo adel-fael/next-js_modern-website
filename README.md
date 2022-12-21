@@ -6,7 +6,7 @@ Live URL: [Modern Website](https://next-js-modern-website.vercel.app/)
 
 Getting Startted: for developers
 
-```powershell
+```shell
   pnpm i
 ```
 
