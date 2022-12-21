@@ -18,7 +18,7 @@ import {
   howData,
   navData,
   testimonialData,
-} from '../data.json'
+} from '../data/content.json'
 
 const Home = ({
   aboutData,
