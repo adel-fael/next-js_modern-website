@@ -2,9 +2,12 @@
 
 Next JS - Tailwind CSS - Framer Motion
 
+
+Live URL: [Modern Website](https://next-js-modern-website.vercel.app/)
+
 dev server
 
-```on terminal
+```powershell
   pnpm i
 
   pnpm run dev
