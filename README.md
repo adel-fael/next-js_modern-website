@@ -10,6 +10,6 @@ Getting Startted: for developers
   pnpm i
 ```
 
-```powershell
+```shell
   pnpm run dev
 ```
